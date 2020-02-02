@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Callback</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        const ciudades = ['Londres', 'Madrid', 'Paris', 'Viena', 'San Francisco'];
+
+        //Inline Callback (Esta es la mejor forma)
+        ciudades.forEach(function(ciudad) {
+            console.log(ciudad);
+        });
+
+        //Con funciones definidas
+        function callback(ciudad) {
+            console.log(ciudad);
+        }
+        ciudades.forEach(callback);
+
+        /*Un ejemplo muy común es en una REST API */
+
+        const paises = ['Francia', 'Canadá', 'Irlanda', 'España', 'México', 'Argentina'];
+
+        //Mostrar países después de un segundo
+        function mostrarPaises() {
+            setTimeout(function() {
+                let html = '';
+                paises.forEach(function(pais) {
+                    html += `${pais}-`;
+                });
+                document.getElementById('app').innerHTML = html;
+            }, 1000);
+        }
+
+        mostrarPaises();
+
+        function nuevoPais(pais, mostrarPaises) {
+            setTimeout(function() {
+                paises.push(pais);
+                //Esto es el Callback
+                mostrarPaises();
+            }, 2000);
+        }
+
+        nuevoPais('Noruega', mostrarPaises);
+
+        const nuevos = ['Chile', 'Australia', 'Cuba'];
+        nuevos.forEach(function(pais) {
+            nuevoPais(pais, mostrarPaises);
+        });
+    </script>
+</body>
+
+</html>

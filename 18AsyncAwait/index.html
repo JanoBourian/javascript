@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASYNCAWAIT</title>
+</head>
+
+<body>
+    <script>
+        async function obtenerClientes() {
+            const clientes = new Promise((resolve, reject) => {
+                setTimeout(function() {
+                    resolve(`Clientes descargados...`);
+                }, 2000);
+            });
+            const error = false;
+            if (!error) {
+                const respuesta = await clientes;
+                return respuesta
+            } else {
+                await Promise.reject(`Hubo un error...`);
+            }
+        }
+
+        obtenerClientes()
+            .then(res => console.log(res))
+            .catch(error => console.log(error));
+    </script>
+
+</body>
+
+</html>

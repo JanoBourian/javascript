@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROMISES</title>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        /* Promises */
+        const esperando = new Promise(function(resolve, reject) {
+            setTimeout(function() {
+                resolve('Se ejecutó');
+            }, 5000);
+        });
+
+        esperando.then(function(mensaje) {
+            console.log(mensaje);
+        });
+
+        const aplicarDescuento = new Promise(function(resolve, reject) {
+            const descuento = false;
+            if (descuento) {
+                resolve('Descuento Aplicado');
+            } else {
+                reject('No se aplica descuento');
+            }
+        });
+
+        aplicarDescuento.then(function(mensaje) {
+            console.log(mensaje);
+        }).catch(function(error) {
+            console.log(error);
+        });
+    </script>
+</body>
+
+</html>
