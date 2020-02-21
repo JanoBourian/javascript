@@ -27,18 +27,18 @@ console.log(cliente.tipoCliente());
 function Usuario(nombre = 'Usuario', saldo = 0) {
     // Esto es con un constructor
     this.nombre = nombre,
-        this.saldo = saldo,
-        this.tipoUsuario = function() {
-            let tipo;
-            if (this.saldo > 5000) {
-                tipo = 'Platinum'
-            } else if (this.saldo < 5000 && this.saldo > 1000) {
+    this.saldo = saldo,
+    this.tipoUsuario = function() {
+        let tipo;
+        if (this.saldo > 5000) {
+            tipo = 'Platinum'
+        } else if (this.saldo < 5000 && this.saldo > 1000) {
                 tipo = 'Gold'
-            } else {
-                tipo = 'Normal'
-            }
-            return tipo;
+        } else {
+            tipo = 'Normal'
         }
+        return tipo;
+    }
 }
 
 const persona = new Usuario('Pedro', 999999);
@@ -72,7 +72,7 @@ new Array(1,2,3,4);
 
 function Jugador(nombre, nivel) {
     this.nombre = nombre,
-        this.nivel = nivel
+    this.nivel = nivel
 }
 
 //Crear un prototipo
