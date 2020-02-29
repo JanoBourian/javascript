@@ -1,0 +1,318 @@
+body{
+    background-color: #FB6C6B;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Barra de navegación */
+.logo-container{
+    display: flex;
+}
+
+.logo-icono{
+    color: gold;
+    font-size:40px;
+}
+
+.nav-superior{
+    background-color: #06344D;
+}
+
+.nav-link{
+    color: white;
+    transition: .3s all ease-in-out;
+}
+
+.nav-link:hover{
+    color: #FB6C6B;
+}
+
+.nav-icono{
+    color: gold;
+    font-size:30px;
+}
+
+/* HERO */
+
+.hero{
+    height: 500px;
+    background:     linear-gradient(
+        rgba(142, 204, 255, 0.7),
+        rgba(131, 198, 253, 0.7)
+      ),url('../img/hero.jpg') no-repeat center center fixed;
+    overflow: hidden;
+    background-size: cover;
+}
+.contenido-hero{
+    padding: 0 10px;
+}
+
+.contenido-hero h1{
+    font-size: 60px;
+}
+
+.contenido-hero h2{
+    background-color: #06344D;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+/* MAIN */
+.des-web{
+    height: 600px;
+    display: flex;
+}
+
+.about-me{
+    width: 50%;
+}
+
+.card-about-me{
+    background-color: #06344D;
+    color: white;
+    padding: 18px 20px;
+    height: 100%;
+}
+
+.card-about-me h3{
+    padding-bottom: 14px;
+    border-bottom: 3px solid white;
+}
+
+.card-about-me p{
+    padding-top: 14px;
+}
+
+.img-me{
+    width: 50%;
+    background-image: url('../img/des.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+}
+
+
+/* Servicios */
+.servicios{
+    color: white;
+    padding: 30px 10px;
+}
+
+.icono-serv{
+    font-size: 100px;
+    color: #06344D;
+}
+
+.servicio{
+    padding: 20px 20px;
+    max-width: 350px;
+    line-height: 2;
+}
+
+.servicio h3{
+    color: #AAE8E7;
+}
+
+.contenido-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Testimoniales */
+.tes-web{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+
+.testimoniales{
+    background-color: #06344D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.titulo-tes{
+    width: 100%;
+}
+.testimonial{
+    display: flex;
+    align-items: center;
+    padding: 10px 6px;
+    height: 33%;
+}
+
+.img-testimonio{
+    width: 260px;
+}
+
+.texto-testimonio{
+    padding: 0 10px;
+}
+
+/* POrtafolio */
+
+.portafolio{
+    color: white;
+}
+
+.portafolio h2{
+    text-align: center;
+    padding: 16px;
+}
+
+.card{
+    color: black;
+    margin-bottom: 8px;
+}
+
+.portafolio .row{
+    padding: 10px 0px;
+}
+
+/* Footer*/
+.footer{
+    background-color: #06344D;
+    padding: 14px 10px;
+    color: #AAE8E7;
+}
+
+.derechos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.derechos a, .nav-inferior a{
+    color: #AAE8E7;
+    text-decoration: none;
+}
+
+.nav-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.nav-footer a{
+    display: inline-block;
+    padding: 6px 4px;
+}
+
+.nav-footer a:hover{
+    color: #FB6C6B;
+}
+
+/* Formulario */
+.formulario{
+    padding: 20px 0px;
+    background-color: #06344D;
+    color: white;
+}
+
+.contenido-formulario{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-contacto{
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-control{
+    border: 4px solid transparent;
+}
+
+/* Contactos */
+.contactos{
+    padding: 14px;
+}
+
+.contactos-titulo{
+    padding: 14px 0px;
+    color: #06344D;
+}
+
+.contenedor-tabla{
+    background-color: white;
+}
+
+.contenedor-tabla td{
+    padding: 18px 0px;
+}
+
+.btn-eliminar{
+    margin: 4px 2px;
+}
+
+@media screen and (min-width:768px){
+    .contenido-servicios{
+        flex-direction: row;
+    }
+    .servicio{
+        width: 33%;
+    }
+    .tes-web{
+        flex-direction: row;
+    }
+    .titulo-tes{
+        width: 50%;
+    }
+    .testimoniales{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 606px){
+    .tes-web{
+        margin-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 450px){
+    .tes-web{
+        margin-bottom: 70px;
+    }
+    
+}
+
+
+@media screen and (max-width: 417px){
+    .tes-web{
+        margin-bottom: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 340px){
+    .tes-web{
+        margin-bottom: 200px;
+    }
+    
+}
+
+
+.prueba-estatica{
+    height: 700px;
+}
