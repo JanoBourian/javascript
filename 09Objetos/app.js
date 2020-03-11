@@ -134,9 +134,9 @@ const mediador = new Master('Fernando', 10000, 1233404, 'Nevada');
 console.log(mediador);
 console.log(mediador.tipoJugador());
 
-/* +++++++++++++ */
-/* Object create */
-/* +++++++++++++ */
+/* ++++++++++++++++ */
+/* Object create    */
+/* ++++++++++++++++ */
 
 // Vamos a hacer un ejemplo que podría ayudarnos a crear protos ECMA5
 

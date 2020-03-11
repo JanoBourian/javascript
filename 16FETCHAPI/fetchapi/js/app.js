@@ -49,7 +49,7 @@ function cargarAPI() {
             datos.forEach(function(dato) {
                 html += `
                 <h3> ${dato.author} </h3>
-                <a href="${dato.post_url}"> Ver imagen</a>
+                <img src="${dato.post_url}">
                 `;
             })
             document.getElementById('resultado').innerHTML = html;
