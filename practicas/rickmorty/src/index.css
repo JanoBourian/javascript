@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Estilos propios */
+a, .no-decoration{
+  text-decoration: none!important;
+}
+
+.color-white{
+  color: white;
+}
+
+.hover-gold{
+  transition: .2s all ease-in-out;
+}
+
+.hover-gold:hover{
+  color: gold;
+}

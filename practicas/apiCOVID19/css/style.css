@@ -1,0 +1,7 @@
+a{
+    text-decoration: none!important;
+}
+
+.contenedor-formulario, .card-contenedor{
+    max-width: 500px;
+}

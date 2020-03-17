@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>COVID19 Status</title>
+</head>
+<body>
+    <h1 class="h3 text-center my-2"> About COVID19 by country</h1>
+    <div class="alert alert-danger">
+        <div class="d-flex justify-content-center">
+            <p>Countries with COVID19:   </p>
+            <p id="total-paises" class="text-center"></p>
+        </div>
+    </div>
+    <hr>
+    <!-- México-->
+    <div class="container">
+        <h3 class="h3 text-center"> About Mexico:</h3>
+        <div class="card-contenedor mx-auto text-center">
+            <div class="card">
+                <div class="card-body" id="card-mexico">
+                    <h3 class="card-title">Mexico</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- API-->
+
+    <div class="container">
+        <h3 class="h3 text-center"> Selected your country:</h3>
+        <div class="contenedor-formulario mx-auto py-3">
+            <form>
+                <div class="form-group">
+                    <select name="selection" id="selection" class="form-control">
+                        <option> Country </option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="checar"> Check</button>
+            </form>
+            <div class="card-contenedor mx-auto text-center mt-3">
+                <div class="card">
+                    <div class="card-body" id="card-pais">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- TOP 10-->
+    <div class="container">
+        <h3 class="h3 text-center">Countries with more confirmed cases</h3>
+        <div id="lista-paises" class=" text-center">
+
+        </div>
+    </div>
+    <hr>
+    <!-- More code-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                
+                <!-- Separation -->
+                <div class="col-12 col-md-6 d-flex flex-column text-center mt-2">
+                    <h4> About this site: </h4>
+                    <div class="line d-inline-block">
+                        <p class="m-0">Github repository:
+                            <a href="https://github.com/JanoBourian/covid19">Here</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Separation -->
+                <div class="col-12 col-md-6 d-flex flex-column text-center mt-2">
+                    <h4> About data: </h4>
+                    <div class="line d-inline-block">
+                        <p class="m-0"> API:
+                            <a href="https://covid19api.com/#details"> A free API for data on the Coronavirus </a>
+                        </p>
+                    </div>
+                    <div class="line d-inline-block">
+                        <p class="m-0">Built by:
+                            <a href="https://ksred.me/">Kyle Redelinghuys</a>
+                        </p>
+                    </div>
+                    <div class="line d-inline-block">
+                        <p class="m-0"> Data is sourced from:
+                            <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins CSSE </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Script para Frameworks-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Script propios-->
+    <script src="js/app.js"></script>
+</body>
+</html>
